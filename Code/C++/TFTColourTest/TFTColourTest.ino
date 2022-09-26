@@ -1,6 +1,6 @@
 /*
  * Program to cycle through all of the colours in "Colours.h"
- * If the colour of the text deos not match what the text says, 
+ * If the colour of the text does not match what the text says, 
  * change the Hex value for that colour in "Colours.h"
  * 
  * Author: Sean Price
