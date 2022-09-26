@@ -79,6 +79,6 @@ while(1):
         fbuf.fill(colour)
         fbuf.text(colourNames[i], 5, 5, Colours.GREY)
         renderBuffer()
-        time.sleep(8)
+        time.sleep(4)
         i = i + 1
 
