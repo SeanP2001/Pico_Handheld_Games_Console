@@ -7,3 +7,11 @@ I started this project to follow on from my [ATtiny Handheld Games Console](http
 ## Brief
 
 I wanted to make a USB-programmable games console which could be programmed using either MicroPython or C++. I also wanted to use silicone button membranes to give the buttons a more premium feel compared to the tactile buttons on the ATtiny console. Partway into this project, I decided I wanted to use a colour TFT display.
+
+## Circuitry
+
+### Schematic
+
+<p align="center">
+  <img src="./Images/Schematic.png" />
+</p>
