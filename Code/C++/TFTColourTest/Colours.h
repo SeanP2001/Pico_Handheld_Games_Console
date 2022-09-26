@@ -23,6 +23,7 @@
 #define TEAL 0x8400
 #define LIME 0x07E0
 #define GREEN 0x0400
+#define DARK_GREEN 0x1180 
 #define OLIVE 0x0410
 #define YELLOW 0x07FF
 #define ORANGE 0x053F
