@@ -36,8 +36,8 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_CLK, TFT_R
 #define bButton 20
 
 // ---------------------------------  O T H E R   V A R I A B L E S  ---------------------------------
-// Character(int _colour, int _width, int _height, int _xPos, int _yPos, int _jumpHeight, int _moveSpeed)
-Character character(RED, 10, 20, 155, 175, 20, 1);
+// Character(int _colour, int _width, int _height, int _xPos, int _yPos, int _jumpHeight, int _jumpDuration)
+Character character(RED, 10, 20, 155, 175, 30, 1500);
 
 // -------------------------------------------- S E T U P --------------------------------------------
 void setup() 
@@ -55,23 +55,26 @@ void setup()
   tft.setRotation(2);
   tft.fillScreen(BLACK);
   character.draw();
+
+  delay(1000);
 }
 
 
 // --------------------------------------------- M A I N ---------------------------------------------
 void loop(void) 
 {
-  if((digitalRead(aButton) == 0) && (digitalRead(leftButton) == 0))          // If the a button and left button are being pressed
+  //character.drawBlank();
+  
+  if(digitalRead(aButton) == 0)                                         // If the a button is being pressed
   {
-    character.jumpLeft();
-  } 
-  else if((digitalRead(aButton) == 0) && (digitalRead(rightButton) == 0))    // If the a button and right button are being pressed
-  {
-    character.jumpRight();
-  }
-  else if(digitalRead(aButton) == 0)                                         // If the a button is being pressed
-  {
-    character.jump();
+    while (digitalRead(aButton) == 0)
+    {
+      
+    }
+    if (!character.jumping)
+    {
+      character.jump();
+    } 
   }
   else if(digitalRead(leftButton) == 0)                                      // If the left button is being pressed
   {
@@ -81,4 +84,12 @@ void loop(void)
   {
     character.moveRight();
   }
+
+  character.updatePos();
+  
+  character.draw();
+  
+  Serial.println(character.yPos);
+
+  delay(30);
 }

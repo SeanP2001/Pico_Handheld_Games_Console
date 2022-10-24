@@ -14,13 +14,23 @@ class Character{
     int colour;
     int width;
     int height;
-    int xPos;
-    int yPos;
     int jumpHeight;
-    int moveSpeed;
+    int jumpDuration;     // in ms
+    //int moveSpeed;
+    int currentTime;
+    int jumpStartTime;
+    int timeSinceJump;
+    int initialHeight;   
+
+    enum direction {Up, Down, Left, Right};
     
   public:
-    Character(int _colour, int _width, int _height, int _xPos, int _yPos, int _jumpHeight, int _moveSpeed);
+    int xPos;
+    int yPos;
+
+    bool jumping;
+  
+    Character(int _colour, int _width, int _height, int _xPos, int _yPos, int _jumpHeight, int _jumpDuration);
 
     void draw();
 
@@ -30,15 +40,11 @@ class Character{
 
     void moveRight();
 
-    void moveUp();
-
-    void moveDown();
+    void moveYPos(int dy, enum direction dir);
 
     void jump();
 
-    void jumpLeft();
-
-    void jumpRight();
+    void updatePos();
 };
 
 
