@@ -1,7 +1,0 @@
-(fp_lib_table
-  (lib (name "MCU_RaspberryPi_and_Boards")(type "KiCad")(uri "${KIPRJMOD}/MCU_RaspberryPi_and_Boards.pretty")(options "")(descr ""))
-  (lib (name "0.91_128x64_SSD1306_Oled_Display")(type "KiCad")(uri "${KIPRJMOD}/0.91_128x64_SSD1306_Oled_Display.pretty")(options "")(descr ""))
-  (lib (name "Volume_Wheel")(type "KiCad")(uri "${KIPRJMOD}/Volume_Wheel.pretty")(options "")(descr ""))
-  (lib (name "Silicone_Button_Pad")(type "KiCad")(uri "${KIPRJMOD}/Silicone_Button_Pad.pretty")(options "")(descr ""))
-  (lib (name "3xAA_Battery_Holder")(type "KiCad")(uri "${KIPRJMOD}/3xAA_Battery_Holder.pretty")(options "")(descr ""))
-)
