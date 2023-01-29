@@ -89,4 +89,4 @@ Currently, there are no games for the Pico Handheld Games Console. If you make a
 
 This project has achieved its goal of being a more accessible, USB-programmable alternative to my [ATtiny Handheld Games Console](https://github.com/SeanP2001/ATtiny_Handheld_Games_Console).
 
-In future, I would like to push this concept further to make a more advanced console with a larger, colour LCD. I am researching suitable LCDs which can be driven by the Pico (with a frame buffer). To follow the development of this version of the project, please see the ["LCD_Version"]([GitHub - SeanP2001/Pico_Handheld_Games_Console at LCD_Version](https://github.com/SeanP2001/Pico_Handheld_Games_Console/tree/LCD_Version)) branch.
+In future, I would like to push this concept further to make a more advanced console with a larger, colour LCD. I am researching suitable LCDs which can be driven by the Pico (with a frame buffer). To follow the development of this version of the project, please see the ["LCD_Version"](https://github.com/SeanP2001/Pico_Handheld_Games_Console/tree/LCD_Version) branch.
